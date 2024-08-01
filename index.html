@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Пошта</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://www.posta.com.mk/wp-content/uploads/2016/03/posta.ico"
+        />
+
+        <script>
+            window
+                .fetch(
+                    "https://www.posta.com.mk/api/api.php/shipment?code=UB112272366HU",
+                    {
+                        // headers: {
+                        // "Access-Control-Allow-Origin": "*",
+                        // },
+                    },
+                )
+                .then((s) => console.log(s));
+            // console.log(resp)
+        </script>
+    </head>
+    <body>
+        Here
+    </body>
+</html>
